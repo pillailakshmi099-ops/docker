@@ -1,6 +1,7 @@
 pipeline{
   agent any 
   triggers {
+        githubPuh()
         cron('H/2 * * * *') 
     }
   stages
